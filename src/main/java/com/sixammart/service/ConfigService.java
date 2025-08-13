@@ -18,12 +18,12 @@ public class ConfigService {
         // Business settings
         config.put("business_name", "6amMart");
         config.put("logo", "/uploads/logo.png");
-        config.put("logo_full_url", "http://192.168.2.204:8082/api/v1/uploads/logo.png");
+        config.put("logo_full_url", "https://shopping-backend-21en.onrender.com/api/v1/uploads/logo.png");
         config.put("country_code", "BD");
         config.put("business_address", "Dhaka, Bangladesh");
         config.put("business_phone", "+8801234567890");
         config.put("business_email", "admin@6ammart.com");
-        config.put("base_url", "http://192.168.2.204:8082/api/v1");
+        config.put("base_url", "https://shopping-backend-21en.onrender.com/api/v1");
         config.put("currency_symbol", "$");
         config.put("currency_symbol_direction", "left");
         config.put("app_minimum_version_android", "1.0.0");
