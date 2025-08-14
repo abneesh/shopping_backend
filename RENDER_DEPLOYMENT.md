@@ -10,13 +10,21 @@
 
 ### 2. Environment Variables for Render
 
-Set these environment variables in Render dashboard:
+**Option A: H2 Database (Default - No setup required)**
+```bash
+# Application Configuration
+SPRING_PROFILES_ACTIVE=prod
+```
 
+**Option B: MySQL Database (When you have MySQL setup)**
 ```bash
 # Database Configuration
 DATABASE_URL=jdbc:mysql://your-mysql-host:3306/mintmey_db?useSSL=true&serverTimezone=UTC
+DATABASE_DRIVER=com.mysql.cj.jdbc.Driver
 DATABASE_USERNAME=your_username
 DATABASE_PASSWORD=your_password
+JPA_DIALECT=org.hibernate.dialect.MySQL8Dialect
+H2_CONSOLE_ENABLED=false
 
 # Application Configuration
 SPRING_PROFILES_ACTIVE=prod
